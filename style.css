@@ -3,7 +3,7 @@
 }
 body {
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 270px 3fr;
     grid-template-rows: 1fr 4fr;
     height: 100vh;
     
@@ -15,8 +15,7 @@ body {
 .sidebar {
     grid-column: 1 / 2;
     grid-row: 1/3;
-    min-width: 200px;
-    max-width: 300px;
+    
     background-color: rgb(3, 10, 109);
     display:grid;
     grid-template-rows: 83px repeat(8, 40px);
@@ -29,7 +28,7 @@ h1 {
     display: flex;
     align-items: center;
     font-size: 1.75rem;
-    color:gray;
+    color:rgb(151, 158, 194); 
     padding-bottom: 40px;
 }
 h1 svg {
@@ -37,9 +36,9 @@ h1 svg {
     font-size: 50px;
     color:rgb(0, 47, 255); 
 }
-a {
+.sidebar a {
     margin-left:5px;
-    grid-column:1 / 1;
+    grid-column:1 / 2;
     text-decoration: none;
     color: white;
     display: flex;
@@ -48,7 +47,7 @@ a {
 a:nth-child(5) > img {
     transform: translateY(3px);
 }
-a:last-of-type > img {
+.sidebar a:last-of-type > img {
     width: 35px;
     margin-left: 2.5px;
     margin-right: 22.5px;
@@ -59,11 +58,34 @@ span {
     align-items: center;
     height: 40px;
 }
-a img {
+.sidebar img {
     width: 40px;
     filter: invert(1);
     margin-right: 20px;
 }
 .header {
     grid-column: 2/3;
+    background-color: rgb(255, 255, 255);
+    grid-row:1/2
 }
+.header img{
+    width: 40px;
+}
+input {
+    height:30px;
+    width:500px;
+    border-radius: 15px;
+    caret-color: black;
+    background-color: rgb(161, 161, 161);
+    padding-left: 10px;
+    border-style: none;
+    margin-top: 10px;
+}
+input:focus {
+    outline:none
+}
+.header {
+    display: flex;
+    
+}
+
