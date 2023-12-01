@@ -1,2 +1,2 @@
 # Project_Dashboard
-Admin dashboard project made with CSS grid
+Playstation admin dashboard made with CSS grid
