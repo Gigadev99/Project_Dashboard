@@ -67,7 +67,7 @@ span {
     grid-column: 2/3;
     background-color: rgb(255, 255, 255);
     grid-row:1/2;
-    padding-left: 15px;
+    padding-left: 25px;
     padding-right: 15px;
 }
 .header img{
@@ -89,14 +89,17 @@ input:focus {
 }
 .header {
     display: flex;
-    justify-content: space-between
-
+    justify-content: space-between;
+    padding-top:15px
 }
 .searchbar {
     display:flex;
-    align-items: top;
-}
-.search {
     
 }
+.search {
+    margin-top: -3px;
+    margin-left: 5px;
+}
+.top-right {
 
+}
