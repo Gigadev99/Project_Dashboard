@@ -49,7 +49,7 @@ a:nth-child(5) > img {
 }
 .sidebar a:last-of-type > img {
     width: 35px;
-    margin-left: 2.5px;
+    margin-left: 3px;
     margin-right: 22.5px;
 }
 span {
@@ -67,39 +67,63 @@ span {
     grid-column: 2/3;
     background-color: rgb(255, 255, 255);
     grid-row:1/2;
-    padding-left: 25px;
-    padding-right: 15px;
+    padding:25px;
+    border:1PX BLACK solid;
+    min-height: 150px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-wrap:wrap;
+    padding-top:15px
 }
 .header img{
     width: 40px;
 }
 input {
     height:30px;
-    width:500px;
+    min-width: 250px;
+    max-width: 500px;
+    flex:1;
     border-radius: 15px;
     caret-color: black;
     background-color: rgb(161, 161, 161);
     padding-left: 10px;
-    border-style: none;
-   
-   
+    border-style: none; 
 }
 input:focus {
     outline:none
 }
-.header {
-    display: flex;
-    justify-content: space-between;
-    padding-top:15px
-}
+
 .searchbar {
     display:flex;
-    
+    height: 50px;
 }
 .search {
     margin-top: -3px;
     margin-left: 5px;
 }
 .top-right {
-
+margin-left: auto;
+padding-left: 50px;
+height: 50px;
+}
+.top-right + div {
+    flex-basis: 100%;
+    border: 1px black solid;
+    display: flex;
+}
+.greeting, .buttons {
+    border: 1px solid #000;
+    flex-basis:50%;
+    display: flex;
+    gap:20px;
+}
+.greeting {
+    align-items: end;
+}
+.greeting img {
+    width: 100px;
+    height: 100px;
+}
+p {
+    font-weight:600;
 }
