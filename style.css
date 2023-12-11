@@ -127,3 +127,8 @@ height: 50px;
 p {
     font-weight:600;
 }
+.content, .content button {
+    font-size: 200px;
+    font-weight: bolder;
+    text-align: center;
+}
