@@ -24,7 +24,7 @@ body {
     padding-top: 20px;
     row-gap: 10px;
 }
-h1 {
+.sidebar h1 {
     display: flex;
     align-items: center;
     font-size: 1.75rem;
@@ -69,17 +69,18 @@ span {
     grid-row:1/2;
     padding:25px;
     border:1PX BLACK solid;
-    min-height: 150px;
-    padding-bottom: 10px;
+    min-height: 110px;
+    padding-bottom: 15px;
     display: flex;
     flex-wrap:wrap;
-    padding-top:15px
+    padding-top:15px;
+    
 }
 .header img{
     width: 40px;
 }
 input {
-    height:30px;
+    height:20px;
     min-width: 250px;
     max-width: 500px;
     flex:1;
@@ -95,40 +96,115 @@ input:focus {
 
 .searchbar {
     display:flex;
-    height: 50px;
+    height: 40px;
 }
 .search {
     margin-top: -3px;
     margin-left: 5px;
 }
+.search img {
+    height: 30px;
+}
 .top-right {
 margin-left: auto;
 padding-left: 50px;
-height: 50px;
+height: 40px;
 }
 .top-right + div {
     flex-basis: 100%;
     border: 1px black solid;
     display: flex;
+    height: 80px;
 }
 .greeting, .buttons {
     border: 1px solid #000;
     flex-basis:50%;
     display: flex;
     gap:20px;
+    height:80px;
 }
 .greeting {
     align-items: end;
 }
 .greeting img {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
 }
 p {
-    font-weight:600;
+    font-weight:500;
 }
-.content, .content button {
-    font-size: 200px;
-    font-weight: bolder;
-    text-align: center;
+strong {
+    font-size: large;
+}
+.content {
+    padding: 15px 15px;
+    display: flex;
+    background-color: #000000;
+}
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-rows: repeat(auto-fill,300px);
+    grid-auto-rows: 300px;
+    gap:20px;
+    overflow: auto;
+    padding:5px;
+    margin-left: -5px;
+    margin-top: -5px;
+}
+.cards > div {
+   
+    border-radius: 10px;
+    display: flex;
+    overflow: hidden;
+    box-shadow: 2px 2px 4px rgb(0, 0, 105)
+}
+.content h2, .content h3 {
+    margin: 0 0 5px 0;
+    font-weight: 500;
+    color: white;
+}
+.cards img {
+    object-fit: cover;
+    width:100%;
+    
+}
+.cards img:first-of-type {
+    margin-top: 50px;
+    object-fit: cover;
+    overflow: visible;
+}
+
+.text-container {
+    position: absolute;
+    max-width:280px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 30px;
+    color: white;
+}
+.games h3 {
+    font-size: 24px;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+}
+.games p {
+    font-size: 13px;
+    text-shadow: 1px 2px 1px rgb(0, 0, 0);
+}
+.side {
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 30%
+}
+.games {
+    flex-basis: 70%;
+}
+.notifications {
+    border-radius: 10px;
+    background-color: gray;
+    padding: 10px;
+}
+.side h3 {
+    color:black ;
+    
 }
