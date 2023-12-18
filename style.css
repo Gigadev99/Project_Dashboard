@@ -139,7 +139,7 @@ strong {
 .content {
     padding: 15px 15px;
     display: flex;
-    background-color: #000000;
+    background-color: #ffffff;
 }
 .cards {
     display: grid;
@@ -198,6 +198,7 @@ strong {
 }
 .games {
     flex-basis: 70%;
+    padding-right: 10px;
 }
 .notifications {
     border-radius: 10px;
